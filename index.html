@@ -1,79 +1,170 @@
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="ur" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TikTok Profile Search</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VJ Digital Visa Services</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      text-align: center;
-      padding: 40px 15px;
-    }
+<style>
+body{
+    margin:0;
+    font-family:Tahoma,Arial,sans-serif;
+    background:#f4f7fb;
+    color:#172033;
+    text-align:center;
+}
 
-    .box {
-      max-width: 450px;
-      margin: auto;
-      background: white;
-      padding: 25px;
-      border-radius: 15px;
-    }
+.header{
+    background:linear-gradient(135deg,#123c69,#087f73);
+    color:white;
+    padding:40px 15px;
+}
 
-    input {
-      width: 90%;
-      padding: 12px;
-      margin: 15px 0;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
+.header h1{
+    margin:0;
+    font-size:34px;
+}
 
-    button {
-      padding: 12px 25px;
-      border: none;
-      border-radius: 8px;
-      background: #000;
-      color: white;
-      cursor: pointer;
-    }
+.header p{
+    font-size:18px;
+}
 
-    #result {
-      margin-top: 25px;
-    }
-  </style>
+.container{
+    max-width:950px;
+    margin:auto;
+    padding:25px 15px;
+}
+
+/* ویڈیو درمیان میں */
+.video{
+    width:100%;
+    max-width:600px;
+    border-radius:18px;
+    display:block;
+    margin:10px auto 35px;
+    background:#000;
+    box-shadow:0 7px 25px rgba(0,0,0,.18);
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:16px;
+}
+
+.card{
+    background:white;
+    padding:22px 12px;
+    border-radius:16px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.card h2{
+    font-size:20px;
+}
+
+.contact{
+    background:white;
+    margin-top:35px;
+    padding:30px 15px;
+    border-radius:16px;
+}
+
+.number{
+    font-size:24px;
+    font-weight:bold;
+    direction:ltr;
+    display:inline-block;
+}
+
+.whatsapp{
+    display:inline-block;
+    background:#159447;
+    color:white;
+    padding:15px 30px;
+    margin-top:20px;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:19px;
+    font-weight:bold;
+}
+
+footer{
+    background:#101827;
+    color:white;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
 </head>
 
 <body>
 
-  <div class="box">
-    <h1>TikTok Profile</h1>
+<div class="header">
+    <h1>VJ Digital Visa Services</h1>
+    <p>آپ کے ویزا کے سفر میں رہنمائی اور معاونت</p>
+</div>
 
-    <p>اپنا TikTok Username درج کریں</p>
+<div class="container">
 
-    <input type="text" id="username" placeholder="@username">
+    <!-- آپ کی ویڈیو درمیان میں -->
+    <video class="video" controls playsinline>
+        <source src="55045.mp4" type="video/mp4">
+    </video>
 
-    <br>
+    <h2>ہماری ویزا سروسز</h2>
 
-    <button onclick="searchProfile()">Search</button>
+    <div class="services">
 
-    <div id="result"></div>
-  </div>
+        <div class="card">
+            <h2>🇸🇦 سعودی عرب ویزا</h2>
+            <p>سعودی عرب کے ویزا کے لیے رہنمائی</p>
+        </div>
 
-  <script>
-    function searchProfile() {
-      const username = document.getElementById("username").value.trim();
+        <div class="card">
+            <h2>🇦🇪 دبئی / UAE ویزا</h2>
+            <p>دبئی اور UAE ویزا کی معلومات</p>
+        </div>
 
-      if (!username) {
-        document.getElementById("result").innerHTML =
-          "<p>براہ کرم Username درج کریں۔</p>";
-        return;
-      }
+        <div class="card">
+            <h2>🇨🇦 کینیڈا ویزا</h2>
+            <p>کینیڈا ویزا کے لیے رہنمائی</p>
+        </div>
 
-      document.getElementById("result").innerHTML =
-        "<p>Profile search تیار ہے۔ TikTok API کو بعد میں یہاں connect کریں گے۔</p>";
-    }
-  </script>
+        <div class="card">
+            <h2>🇪🇺 یورپ ویزا</h2>
+            <p>یورپ کے مختلف ممالک کے ویزا</p>
+        </div>
+
+        <div class="card">
+            <h2>🇹🇭 تھائی لینڈ ویزا</h2>
+            <p>تھائی لینڈ ویزا کے لیے معاونت</p>
+        </div>
+
+    </div>
+
+    <div class="contact">
+        <h2>ویزا کے لیے ہم سے رابطہ کریں</h2>
+        <p>مزید معلومات کے لیے WhatsApp پر رابطہ کریں</p>
+
+        <div class="number">
+            +92 314 1572343
+        </div>
+
+        <br>
+
+        <a class="whatsapp"
+           href="https://wa.me/923141572343"
+           target="_blank">
+           📱 WhatsApp پر رابطہ کریں
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 VJ Digital Visa Services
+</footer>
 
 </body>
 </html>
